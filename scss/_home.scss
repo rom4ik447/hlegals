@@ -1,0 +1,125 @@
+.home-intro-sect {
+    background-color: #643e72;
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+    padding: 200px 0;
+}
+
+.home-slider-sect {
+    margin-top: 100px;
+}
+
+.carousel-inner {
+    border-radius: 12px;
+}
+
+.home-slider-sect .carousel-item {
+    background-color: $lightgrey-color;
+}
+
+.slider-row {
+    display: flex;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.slider-text {
+    padding: 30px;
+
+    @media (max-width: 1280px) {
+        max-width: 65%;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+    }
+
+    &-name {
+        font-weight: 700;
+        font-size: 16px;
+        color: #b3b3ba;
+        margin-bottom: 0;
+    }
+
+    &-role {
+        font-weight: 400;
+        font-size: 14px;
+        color: #b3b3ba;
+        margin-top: 0;
+    }
+}
+
+.slider-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        height: 500px;
+    }
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media (max-width: 768px) {
+            transform: translate(-50%, -50%) scale(1.25);
+        }
+
+        @media (max-width: 420px) {
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.active {
+    opacity: 1 !important;
+}
+
+.carousel-indicators {
+    position: static;
+    margin: 30px 0;
+}
+
+.carousel-indicators [data-bs-target] {
+    background: #24a3ff;
+    opacity: 0.2;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    margin: 0 7px;
+}
+
+.clients-sect {
+    margin-top: 70px;
+}
+
+.clients-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 576px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 420px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .clients-item {
+        img {
+            width: 100%;
+        }
+    }
+}
