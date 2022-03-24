@@ -123,3 +123,47 @@
         }
     }
 }
+
+.public-sect {
+    background-color: $lightgrey-color;
+    padding-bottom: 50px;
+}
+
+.sect-title {
+    padding: 30px 0;
+}
+
+.public-row {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.public-col {
+    padding: 0;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.data-text {
+    color: $grey-color;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.card-line {
+    width: 360px;
+    height: 4px;
+    border: 0;
+    border-top: 4px solid #e6e6f0;
+    left: 30px;
+    top: 95px;
+}
+
+.card-text {
+    font-weight: 400;
+    font-size: 14px;
+}
