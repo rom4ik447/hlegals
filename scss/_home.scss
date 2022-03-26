@@ -127,6 +127,10 @@
 .public-sect {
     background-color: $lightgrey-color;
     padding-bottom: 50px;
+
+    @media (min-width: 1920px) {
+        margin-top: 60px;
+    }
 }
 
 .sect-title {
@@ -136,13 +140,20 @@
 .public-row {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) minmax(280px, 515px);
 }
 
 .public-col {
     padding: 0;
     background: #ffffff;
     border-radius: 8px;
+}
+
+.card-img {
+    &-bottom,
+    &-top {
+        width: auto;
+    }
 }
 
 .data-text {

@@ -7,6 +7,12 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.container {
+    @media (min-width: 1920px) {
+        width: 1600px;
+    }
+}
+
 .subheading {
     font-size: 14px;
     color: $secondary-color;
