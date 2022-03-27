@@ -7,7 +7,9 @@
     &-line {
         border: 0;
         border-top: 2px solid #e6e6f0;
-        // opacity: .7;
+        height: 1px;
+        background-color: initial;
+        opacity: 1;
     }
 
     &-address {
