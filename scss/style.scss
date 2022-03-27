@@ -7,6 +7,16 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.container {
+    @media (min-width: 1920px) {
+        max-width: 1600px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 648px;
+    }
+}
+
 .subheading {
     font-size: 14px;
     color: $secondary-color;
