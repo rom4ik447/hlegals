@@ -5,7 +5,9 @@
 }
 
 .home-slider-sect {
-    margin-top: 100px;
+    .container {
+        padding: 60px;
+    }
 }
 
 .carousel-inner {
@@ -95,10 +97,6 @@
     margin: 0 7px;
 }
 
-.clients-sect {
-    margin-top: 70px;
-}
-
 .clients-container {
     max-width: 1440px;
     margin: 0 auto;
@@ -131,6 +129,10 @@
     @media (min-width: 1920px) {
         margin-top: 60px;
     }
+.container {
+    padding: 60px;
+}
+    
 }
 
 .sect-title {
