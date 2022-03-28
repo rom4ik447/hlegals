@@ -1,7 +1,8 @@
 .footer {
     background-color: $lightgrey-color;
-    .container {
-        padding: 30px 60px;
+    .footer-container:not(hr) {
+        padding: 0 60px;
+        display: flex;
     }
 
     &-line {
@@ -39,18 +40,6 @@
     }
 }
 
-.content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .copy {
-        color: $grey-color;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-    }
-}
 
 .contacts {
     display: flex;
@@ -85,4 +74,11 @@
             text-transform: none;
         }
     }
+}
+
+.copy {
+    color: $grey-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
 }
