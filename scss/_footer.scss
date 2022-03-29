@@ -72,6 +72,14 @@
         gap: 10px;
     }
 
+    svg:hover {
+        cursor: pointer;
+    }
+
+    svg:hover path {
+        fill: $main-color;
+    }
+
     .footer {
         &-tel,
         &-email {
