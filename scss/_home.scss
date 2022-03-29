@@ -1,5 +1,4 @@
 .home-intro-sect {
-    padding-top: 50px;
     min-height: 100vh;
     background-image: url(/img/symbol.png), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
     background-repeat: no-repeat, no-repeat;
@@ -11,12 +10,13 @@
 }
 
 .title {
+    font-style: normal;
     font-weight: 700;
     font-size: 38px;
     line-height: 46px;
     text-align: center;
-    color: white;
-    margin: auto;
+    color: #ffffff;
+    margin: auto 0 60px;
 }
 
 .button {
@@ -25,12 +25,22 @@
     &:hover {
         cursor: pointer;
         color: $main-color;
-        transition: .3s;
+        transition: 0.3s;
     }
-}
 
-.scroll {
-    color: white;
+    .scroll {
+        &:hover {
+            display: none;
+        }
+    }
+
+    .scroll-hover {
+        position: absolute;
+
+        &:hover {
+            display: flex;
+        }
+    }
 }
 
 .home-slider-sect {
