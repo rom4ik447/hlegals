@@ -1,7 +1,36 @@
 .home-intro-sect {
-    background-color: #643e72;
-    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
-    height: 100vh;
+    padding-top: 50px;
+    min-height: 100vh;
+    background-image: url(/img/symbol.png), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: contain, contain;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+
+.button {
+    margin: auto auto 30px auto;
+
+    &:hover {
+        cursor: pointer;
+        color: $main-color;
+        transition: .3s;
+    }
+}
+
+.scroll {
+    color: white;
 }
 
 .home-slider-sect {
