@@ -124,15 +124,17 @@
 
 .public-sect {
     background-color: $lightgrey-color;
-    padding-bottom: 50px;
+    .container {
+        // padding: 30px 60px 0px;
+
+        // @media (max-width: 768px) {
+        //     padding: 0;
+        // }
+    }
 
     @media (min-width: 1920px) {
         margin-top: 60px;
     }
-.container {
-    padding: 60px;
-}
-    
 }
 
 .sect-title {
@@ -186,8 +188,6 @@
     height: 4px;
     border: 0;
     border-top: 4px solid #e6e6f0;
-    left: 30px;
-    top: 95px;
     opacity: 1;
 }
 
