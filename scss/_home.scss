@@ -125,7 +125,11 @@
 .public-sect {
     background-color: $lightgrey-color;
     .container {
-        padding: 30px 60px 0px;
+        // padding: 30px 60px 0px;
+
+        // @media (max-width: 768px) {
+        //     padding: 0;
+        // }
     }
 
     @media (min-width: 1920px) {
