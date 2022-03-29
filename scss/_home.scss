@@ -7,6 +7,10 @@
 
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+        background-size: auto 100%;
+    }
 }
 
 .title {
@@ -16,7 +20,11 @@
     line-height: 46px;
     text-align: center;
     color: #ffffff;
-    margin: auto 0 60px;
+    margin: auto auto 60px;
+
+    @media (max-width: 992.98px) {
+        margin-bottom: auto;
+    }
 }
 
 .button {
@@ -24,21 +32,15 @@
 
     &:hover {
         cursor: pointer;
-        color: $main-color;
-        transition: 0.3s;
     }
 
-    .scroll {
-        &:hover {
-            display: none;
+    svg {
+        &:hover circle {
+            stroke: $main-color;
         }
-    }
 
-    .scroll-hover {
-        position: absolute;
-
-        &:hover {
-            display: flex;
+        &:hover path {
+            stroke: $main-color;
         }
     }
 }

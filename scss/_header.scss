@@ -1,6 +1,8 @@
 .navbar {
     padding-top: 50px;
     width: 100%;
+    position: static;
+    margin: 0 auto;
 
     @media (max-width: 576px) {
         margin: 0 0 15px;
