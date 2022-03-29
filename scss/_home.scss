@@ -1,9 +1,9 @@
 .home-intro-sect {
     min-height: 100vh;
-    background-image: url(/img/symbol.png), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+    background-image: url(img/symbol.png), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
-    background-size: contain, contain;
+    background-size: auto 100%, contain;
 
     display: flex;
     flex-direction: column;
