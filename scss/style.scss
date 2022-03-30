@@ -38,6 +38,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    word-break: keep-all;
 
     @media (max-width: 375px) {
         font-size: 30px;
