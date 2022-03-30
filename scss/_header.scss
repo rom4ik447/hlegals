@@ -21,11 +21,28 @@
             }
 
             .nav-link {
+                position: relative;
                 color: white;
                 font-weight: 700;
 
+                &:after {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background-color: $main-color;
+                    content: "";
+                    transition: width 0.3s ease-out;
+                }
+                
+                &:hover:after,
+                &:focus:after {
+                    width: 100%;
+                }
+
                 &:hover {
-                    color: darken(white, 10%);
+                    color: $main-color;
                 }
             }
         }

@@ -22,7 +22,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 60px 0;
+    margin: 60px auto;
+
+    // @media (min-width: 375px) {
+    //     max-width: 315px;
+    // }
+    // @media (min-width: 768px) {
+    //     max-width: 648px;
+    // }
+    // @media (min-width: 1024px) {
+    //     max-width: 904px;
+    // }
+
+    // @media (min-width: 1440px) {
+    //     max-width: 1080px;
+    // }
+
+    // @media (min-width: 1920px) {
+    //     max-width: 1360px;
+    // }
 
     .nav {
         &-link {
@@ -31,6 +49,10 @@
             line-height: 46px;
             text-align: right;
             color: $grey-color;
+
+            &:hover {
+                color: $main-color;
+            }
 
             &:first-child {
                 background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
@@ -54,6 +76,7 @@
         width: 580px;
 
         &-title {
+            font-style: normal;
             font-weight: 700;
             font-size: 30px;
             line-height: 37px;
@@ -61,6 +84,7 @@
         }
 
         &-subtitle {
+            font-style: normal;
             font-weight: 400;
             font-size: 19px;
             line-height: 30px;
