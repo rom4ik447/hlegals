@@ -35,7 +35,7 @@
     .nav {
         @media (max-width: 1024px) {
             flex-direction: row !important;
-            justify-content: center;
+            overflow-x: visible;
         }
 
         &-link {
@@ -153,6 +153,68 @@
 
         &:hover path {
             stroke: $main-color;
+        }
+    }
+}
+
+.services-sect {
+    .container {
+        padding: 0;
+
+        @media (max-width: 1024px) {
+            margin: 60px;
+        }
+
+        @media (max-width: 768px) {
+            margin: 30px;
+        }
+
+        // .section-heading {
+        //     @media (max-width: 375px) {
+        //         max-width: 315px;
+        //     }
+        // }
+    }
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr), minmax(260px, 1fr);
+    gap: 60px;
+
+    // @media (max-width: 1024px) {
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
+
+    // @media (max-width: 768px) {
+    //     grid-template-columns: 1fr, minmax(260px, 1fr);
+    // }
+
+    .card {
+        background-color: inherit;
+
+        &-service {
+            width: 92px;
+        }
+
+        &-body {
+            padding: 30px 0 0;
+
+            .title-service {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 27px;
+                color: $secondary-color;
+            }
+        }
+
+        &-text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #ffffff;
         }
     }
 }
