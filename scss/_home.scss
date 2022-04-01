@@ -33,9 +33,11 @@
     }
 
     .nav {
-        @media (max-width: 1024px) {
+        @media (max-width: 768px) {
+            width: 100%;
+            flex-wrap: nowrap;
             flex-direction: row !important;
-            overflow-x: visible;
+            overflow: scroll;
         }
 
         &-link {
@@ -44,6 +46,7 @@
             line-height: 46px;
             text-align: right;
             color: $grey-color;
+            width: auto;
 
             @media (max-width: 768px) {
                 font-size: 30px;
@@ -170,12 +173,6 @@
         @media (max-width: 768px) {
             margin: 30px;
         }
-
-        // .section-heading {
-        //     @media (max-width: 375px) {
-        //         max-width: 315px;
-        //     }
-        // }
     }
 }
 
