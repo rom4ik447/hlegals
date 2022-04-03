@@ -23,17 +23,18 @@
     justify-content: center;
     align-items: center;
     margin: 60px auto;
+    padding: 0 60px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 991.98px) {
         flex-direction: column;
     }
 
     @media (max-width: 768px) {
-        margin: auto 30px;
+        padding: 0 30px;
     }
 
     .nav {
-        @media (max-width: 768px) {
+        @media (max-width: 991.98px) {
             width: 100%;
             flex-wrap: nowrap;
             flex-direction: row !important;
@@ -55,13 +56,15 @@
 
             &:hover {
                 color: $main-color;
+                transition: 0.3s all ease;
             }
 
-            &:first-child {
+            &.active {
                 background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
+                background-color: initial;
             }
         }
     }
@@ -72,7 +75,7 @@
         background: rgba(255, 255, 255, 0.3);
         margin: 0px 60px;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 991.98px) {
             display: none;
         }
     }
@@ -80,7 +83,7 @@
     .hr {
         display: none;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 991.98px) {
             display: flex;
             height: 4px;
             max-width: 100%;
@@ -92,8 +95,11 @@
     .info-text {
         max-width: 860px;
 
-        @media (max-width: 1920px) {
-            max-width: 580px;
+        @media (min-width: 1920px) {
+        }
+
+        @media (max-width: 991.98px) {
+            width: 100%;
         }
 
         @media (max-width: 768px) {
@@ -152,10 +158,12 @@
     svg {
         &:hover circle {
             stroke: $main-color;
+            transition: 0.3s all ease;
         }
 
         &:hover path {
             stroke: $main-color;
+            transition: 0.3s all ease;
         }
     }
 }
@@ -205,6 +213,13 @@
                 font-size: 22px;
                 line-height: 27px;
                 color: $secondary-color;
+                text-decoration: none;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $main-color;
+                    transition: 0.3s all ease;
+                }
             }
         }
 
@@ -332,7 +347,7 @@
     }
 
     @media (max-width: 576px) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 
     @media (max-width: 420px) {
@@ -389,7 +404,15 @@
         padding: 30px;
     }
 
-    &-3 {
+    hr {
+        height: 4px;
+        max-width: 100%;
+        opacity: 1;
+        background: #e6e6f0;
+        border-radius: 2px;
+    }
+
+    &:nth-of-type(3) {
         @media (max-width: 991.98px) {
             grid-column: -3/-1;
         }
@@ -401,6 +424,12 @@
     color: #24a3ff;
     font-weight: 700;
     text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+        color: $main-color;
+        transition: .3s all ease;
+    }
 }
 
 .data-text {
@@ -410,13 +439,6 @@
     line-height: 15px;
     letter-spacing: 1px;
     text-transform: uppercase;
-}
-
-.card-line {
-    height: 4px;
-    border: 0;
-    border-top: 4px solid #e6e6f0;
-    opacity: 1;
 }
 
 .card-text {

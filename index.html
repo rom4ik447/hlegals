@@ -27,7 +27,20 @@
                         </div>
                         <p class="navbar-address">Kyiv, Mechnikova str, 14/1</p>
                         <a href="tel:0800 211 927" class="navbar-tel">0800 211 927</a>
-                        <a href="" class="navbar-fb"><img src="./img/fb-icon.svg" alt=""></a>
+                        <a href="" class="navbar-fb"><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_30718_2871)">
+                                    <path
+                                        d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_30718_2871">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
                     </div>
                     <a class="navbar-brand" href="#"><img src="./img/logo-white.svg" class="navbar-main-logo"
                             alt="logo"></a>
@@ -66,26 +79,77 @@
             </div>
         </div>
         <div class="home-info">
-            <nav class="nav flex-column">
-                <a class="nav-link" href="#">Consistent</a>
-                <a class="nav-link" href="#">Customer oriented</a>
-                <a class="nav-link" href="#">Innovative</a>
-                <a class="nav-link" href="#">Business oriented</a>
-            </nav>
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                    aria-selected="true">Consistent</button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                    aria-selected="false">Customer oriented</button>
+                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                    aria-selected="false">Innovative</button>
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                    aria-selected="false">Business oriented</button>
+            </div>
             <div class="vr"></div>
-            <div class="info-text">
-                <hr class="hr">
-                <p class="info-text-title">We turn the idea of legal services</p>
-                <p class="info-text-subtitle">Consolidating many years of experience and practice, the company's lawyers
-                    accompany complex projects and achieve a number of important decisions for the industry. Many of
-                    them form the practice of applying the law of the sea in Ukraine.</p>
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                    aria-labelledby="v-pills-home-tab">
+                    <div class="info-text">
+                        <hr class="hr">
+                        <p class="info-text-title">We turn the idea of legal services</p>
+                        <p class="info-text-subtitle">Consolidating many years of experience and practice, the
+                            company's lawyers
+                            accompany complex projects and achieve a number of important decisions for the industry.
+                            Many of
+                            them form the practice of applying the law of the sea in Ukraine.</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="info-text">
+                        <hr class="hr">
+                        <p class="info-text-title">We turn the idea of legal services</p>
+                        <p class="info-text-subtitle">Consolidating many years of experience and practice, the
+                            company's lawyers
+                            accompany complex projects and achieve a number of important decisions for the industry.
+                            Many of
+                            them form the practice of applying the law of the sea in Ukraine.</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <div class="info-text">
+                        <hr class="hr">
+                        <p class="info-text-title">We turn the idea of legal services</p>
+                        <p class="info-text-subtitle">Consolidating many years of experience and practice, the
+                            company's lawyers
+                            accompany complex projects and achieve a number of important decisions for the industry.
+                            Many of
+                            them form the practice of applying the law of the sea in Ukraine.</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade info-text" id="v-pills-settings" role="tabpanel"
+                    aria-labelledby="v-pills-settings-tab">
+                    <div class="info-text">
+                        <hr class="hr">
+                        <p class="info-text-title">We turn the idea of legal services</p>
+                        <p class="info-text-subtitle">Consolidating many years of experience and practice, the
+                            company's lawyers
+                            accompany complex projects and achieve a number of important decisions for the industry.
+                            Many of
+                            them form the practice of applying the law of the sea in Ukraine.</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="services-sect">
             <div class="container">
                 <div class="sect-title">
-                    <a href="#" class="subheading">Services<img src="img/arrow.svg" alt="arrow"
-                            class="subheading-arrow"></a>
+                    <a href="#" class="subheading">Services<svg class="subheading-arrow" width="12" height="12"
+                            viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5 1.5L8 6L3.5 10.5" stroke="#24A3FF" stroke-width="2" />
+                        </svg></a>
                     <h2 class="section-heading">What can we do better than others?</h2>
                 </div>
                 <div class="service-container">
@@ -93,7 +157,7 @@
                         <div class="card">
                             <img src="img/ecommerce.svg" class="card-service" alt="image">
                             <div class="card-body">
-                                <p class="title-service">IT and e-commerce</p>
+                                <a class="title-service">IT and e-commerce</a>
                                 <p class="card-text">An endless stream of contracts, tax issues, labor relations,
                                     corporate papers - legal work distracts you from doing business. But there is not
                                     much work to do to hire an in-house lawyer.</p>
@@ -104,8 +168,8 @@
                         <div class="card">
                             <img src="img/support.svg" class="card-service" alt="image">
                             <div class="card-body">
-                                <p class="title-service">Comprehensive daily
-                                    legal support</p>
+                                <a class="title-service">Comprehensive daily
+                                    legal support</a>
                                 <p class="card-text">In addition, over time, the work will become the same type and
                                     uninteresting for a full-time lawyer. And we know very well how difficult it is to
                                     find a good candidate with experience in the field of information technology in
@@ -117,7 +181,7 @@
                         <div class="card">
                             <img src="img/coprorate.svg" class="card-service" alt="image">
                             <div class="card-body">
-                                <p class="title-service">Structuring corporate relationships</p>
+                                <a class="title-service">Structuring corporate relationships</a>
                                 <p class="card-text">Instead of just providing legal services, we will hire a lawyer or
                                     a whole team that will fit into the daily life of your company.</p>
                             </div>
@@ -127,7 +191,7 @@
                         <div class="card">
                             <img src="img/trust.svg" class="card-service" alt="image">
                             <div class="card-body">
-                                <p class="title-service">Building contractual relations</p>
+                                <a class="title-service">Building contractual relations</a>
                                 <p class="card-text">Once a week, or week after month, you have your own lawyer by your
                                     side. Anyone in the company can catch it at the coffee maker and just talk about
                                     current affairs instead of waiting for update status.</p>
@@ -138,7 +202,7 @@
                         <div class="card">
                             <img src="img/protection.svg" class="card-service" alt="image">
                             <div class="card-body">
-                                <p class="title-service">Protection of business, intellectual property</p>
+                                <a class="title-service">Protection of business, intellectual property</a>
                                 <p class="card-text">And all the other time he will work on new diverse projects, so he
                                     will definitely not stop in professional development. One way or another, all Axon
                                     Partners will work for you instead of a corporate lawyer.</p>
@@ -149,16 +213,14 @@
                         <div class="card">
                             <img src="img/court.svg" class="card-service" alt="image">
                             <div class="card-body">
-                                <p class="title-service">Judicial representation</p>
+                                <a class="title-service">Judicial representation</a>
                                 <p class="card-text">Is it a small, medium-sized company or a market leader? Local
                                     business or multinational company? Do you have your own legal department or not?</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </section>
 
@@ -172,8 +234,9 @@
                                 <img src="img/carousel-photo.jpg" alt="">
                             </div>
                             <div class="slider-text">
-                                <a href="" class="subheading">команда<img src="img/arrow.svg" alt="arrow"
-                                        class="subheading-arrow"></a>
+                                <a href="" class="subheading">команда<svg class="subheading-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 1.5L8 6L3.5 10.5" stroke="#24A3FF" stroke-width="2"/>
+                                    </svg></a>
                                 <h2 class="section-heading">Ми звикли брати на себе відповідальність та завжди
                                     гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
                                 <div class="slider-text-person">
@@ -189,8 +252,9 @@
                                 <img src="img/carousel-photo.jpg" alt="">
                             </div>
                             <div class="slider-text">
-                                <a href="" class="subheading">команда<img src="img/arrow.svg" alt="arrow"
-                                        class="subheading-arrow"></a>
+                                <a href="" class="subheading">команда<svg class="subheading-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 1.5L8 6L3.5 10.5" stroke="#24A3FF" stroke-width="2"/>
+                                    </svg></a>
                                 <h2 class="section-heading">Ми звикли брати на себе відповідальність та завжди
                                     гарантуємо
                                     чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
@@ -207,8 +271,9 @@
                                 <img src="img/carousel-photo.jpg" alt="">
                             </div>
                             <div class="slider-text">
-                                <a href="" class="subheading">команда<img src="img/arrow.svg" alt="arrow"
-                                        class="subheading-arrow"></a>
+                                <a href="" class="subheading">команда<svg class="subheading-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 1.5L8 6L3.5 10.5" stroke="#24A3FF" stroke-width="2"/>
+                                    </svg></a>
                                 <h2 class="section-heading">Ми звикли брати на себе відповідальність та завжди
                                     гарантуємо
                                     чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
@@ -252,15 +317,16 @@
     <section class="public-sect">
         <div class="container">
             <div class="sect-title">
-                <a href="#" class="subheading">Publications<img src="img/arrow.svg" alt="arrow"
-                        class="subheading-arrow"></a>
+                <a href="#" class="subheading">Publications<svg class="subheading-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.5 1.5L8 6L3.5 10.5" stroke="#24A3FF" stroke-width="2"/>
+                    </svg></a>
                 <h2 class="section-heading">We have something to tell</h2>
             </div>
             <div class="public-row">
                 <div class="card">
                     <img src="img/equity.png" class="card-img-top" alt="image">
                     <div class="card-body">
-                        <p class="subheading-public">Equity associate</p>
+                        <a class="subheading-public">Equity associate</a>
                         <p class="data-text">April 22</p>
                         <hr class="card-line">
                         <p class="card-text">I'm a jun on projects. I am a co-owner of a law firm. How it happened.
@@ -270,19 +336,19 @@
                 <div class="card">
                     <img src="img/gdpr.png" class="card-img-top" alt="image">
                     <div class="card-body">
-                        <p class="subheading-public">Penalty for the Good Corporation: what will happen to Google and
+                        <a class="subheading-public">Penalty for the Good Corporation: what will happen to Google and
                             others
-                            for violating the GDPR</p>
+                            for violating the GDPR</a>
                         <p class="data-text">September 29</p>
                         <hr class="card-line">
                         <p class="card-text">And why the recovery of 50 million euros could be a fateful precedent
                             According to Mind.ua January 21 National Commission for Data Protection.</p>
                     </div>
                 </div>
-                <div class="card card-3">
+                <div class="card">
                     <img src="img/millennial.png" class="card-img-top" alt="image">
                     <div class="card-body">
-                        <p class="subheading-public">Millennial Testament</p>
+                        <a class="subheading-public">Millennial Testament</a>
                         <p class="data-text">August 19</p>
                         <hr class="card-line">
                         <p class="card-text">What and how modern vloggers, opinion leaders and crypto-millionaires will

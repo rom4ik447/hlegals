@@ -26,7 +26,17 @@
     text-transform: uppercase;
 
     &-arrow {
-        transform: translateY(-2px);
+        transform: translateY(-1px);
+    }
+
+    &:hover {
+        color: $main-color;
+        transition: .3s all ease;
+
+        path {
+            stroke: $main-color;
+            transition: .3s all ease;
+        }
     }
 }
 

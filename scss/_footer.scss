@@ -78,6 +78,7 @@
 
     svg:hover path {
         fill: $main-color;
+        transition: .3s all ease;
     }
 
     .footer {
