@@ -178,19 +178,89 @@
     }
 }
 
-
-
-
-.collapse:not(.show) {
-    position: fixed;
+.navbar-collapse {
+    @media (max-width: 576px) {
+        position: absolute;
         width: 100%;
         height: 100%;
-        top: 0;
+        // bottom: 0;
         left: 0;
-        background-color: rgba(50, 50, 100, 0.7);
-        display: none;
+        background-color: #323264;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0 8px;
+        opacity: 1;
+        // overflow: scroll;
+    }
 
-        & .show {
-            display: flex;
+    .navbar-nav {
+        @media (max-width: 576px) {
+            // position: absolute;
+            // bottom: 0;
+            background-color: #ffffff;
+            box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
+            border-radius: 12px 12px 0 0;
+            max-height: 60%;
+            height: 50%;
+            width: 94%;
+            padding: 15px;
+            justify-content: end;
+            overflow: scroll;
         }
+
+        .nav-item {
+            @media (max-width: 576px) {
+                margin-bottom: 15px;
+            }
+        }
+
+        .nav-link {
+            @media (max-width: 576px) {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+                color: $secondary-color;
+                background-color: $lightgrey-color;
+                border-radius: 12px;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+
+        .active {
+            background: #e6e6f0;
+            color: $secondary-color !important;
+        }
+    }
+}
+
+.btn-close {
+    display: none;
+    background-image: url("../img/close.svg") !important;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 1;
+    padding: 0;
+    border: none;
+    position: absolute;
+    top: 51%;
+    right: 24px;
+    z-index: 5;
+    opacity: 1;
+
+    @media (max-width: 576px) {
+        display: flex;
+    }
+}
+
+.burger-open {
+    overflow: hidden;
 }
