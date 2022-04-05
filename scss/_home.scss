@@ -233,6 +233,22 @@
     }
 }
 
+.bottom {
+    &-grey {
+        height: 10px;
+        margin: 0 20px;
+        background-color: #cacadb;
+        border-radius: 0px 0px 12px 12px;
+    }
+
+    &-lightgrey {
+        height: 10px;
+        margin: 0 40px;
+        background: #e7e7f2;
+        border-radius: 0px 0px 12px 12px;
+    }
+}
+
 .home-slider-sect {
     padding-top: 60px;
 
@@ -428,7 +444,7 @@
     &:hover {
         cursor: pointer;
         color: $main-color;
-        transition: .3s all ease;
+        transition: 0.3s all ease;
     }
 }
 
