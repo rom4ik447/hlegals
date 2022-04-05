@@ -9,7 +9,6 @@
     @media (max-width: 576px) {
         width: 12px;
         height: 26px;
-        transform: translateY(0);
     }
 }
 
@@ -18,6 +17,12 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 44px;
+
+    @media (max-width: 576px) {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
 
 .sect-title {
