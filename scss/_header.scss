@@ -57,6 +57,7 @@
     }
 
     &-brand {
+        z-index: 5;
         order: 1;
         margin-bottom: -70px;
 
@@ -191,6 +192,7 @@
         align-items: flex-end;
         padding: 0 8px;
         opacity: 1;
+        z-index: 25;
     }
 
     .navbar-nav {
@@ -231,8 +233,24 @@
         }
 
         .active {
-            background: #e6e6f0;
-            color: $secondary-color !important;
+            color: $main-color !important;
+
+            &:after {
+                @media (min-width: 576px) {
+                    display: block;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: $main-color;
+                content: "";
+                }
+            }
+
+            @media (max-width: 576px) {
+                background: #e6e6f0;
+                color: $secondary-color !important;
+            }
         }
     }
 }

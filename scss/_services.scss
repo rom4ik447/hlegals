@@ -1,0 +1,32 @@
+.main-sect {
+    background-image: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+    background-repeat: no-repeat;
+}
+
+.logo-slash {
+    color: $main-color;
+    height: 47px;
+    padding: 0 4px;
+}
+
+.sect-title {
+    padding-top: 60px;
+}
+
+.bottom {
+    margin-bottom: 60px;
+}
+
+.footer {
+    @media (min-width: 1920px) {
+        margin-top: 60px !important;
+    }
+
+    &-line {
+        display: none;
+    }
+
+    &-container {
+        padding-top: 30px;
+    }
+}

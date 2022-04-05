@@ -352,6 +352,21 @@
     margin: 0 7px;
 }
 
+.clients-sect {
+    text-align: center;
+}
+
+.clients-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323264;
+    margin-bottom: 30px;
+}
+
 .clients-container {
     max-width: 1440px;
     margin: 0 auto;
@@ -371,6 +386,29 @@
     }
 
     .clients-item {
+        &:nth-of-type(1) {
+            img {
+                border-top-left-radius: 12px;
+            }
+        }
+
+        &:nth-of-type(4) {
+            img {
+                border-top-right-radius: 12px;
+            }
+        }
+
+        &:nth-of-type(9) {
+            img {
+                border-bottom-left-radius: 12px;
+            }
+        }
+
+        &:nth-of-type(12) {
+            img {
+                border-bottom-right-radius: 12px;
+            }
+        }
         img {
             width: 100%;
         }
