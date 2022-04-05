@@ -4,9 +4,20 @@
 }
 
 .logo-slash {
-    color: $main-color;
-    height: 47px;
-    padding: 0 4px;
+    transform: translateY(-3px);
+
+    @media (max-width: 576px) {
+        width: 12px;
+        height: 26px;
+        transform: translateY(0);
+    }
+}
+
+.logo-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
 }
 
 .sect-title {
