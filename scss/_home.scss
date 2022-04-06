@@ -184,7 +184,7 @@
     }
 }
 
-.service-container {
+.services-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(260px, 1fr));
     gap: 60px;
@@ -250,8 +250,6 @@
 }
 
 .home-slider-sect {
-    padding-top: 60px;
-
     .container {
         padding: 60px;
 
