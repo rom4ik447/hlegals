@@ -1,6 +1,10 @@
 .footer {
     background-color: $lightgrey-color;
 
+    .container {
+        padding-top: 0;
+    }
+
     .footer-container {
         display: flex;
         justify-content: space-between;

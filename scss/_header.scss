@@ -11,6 +11,8 @@
 
     &-dark {
         .navbar-nav {
+            padding: 12px !important;
+
             @media (max-width: 992px) {
                 margin-left: -8px !important;
             }
@@ -206,8 +208,10 @@
             max-height: 60%;
             height: 50%;
             width: 94%;
-            padding: 13% 15px 0 15px;
-            overflow: scroll;
+        }
+
+        @media (max-height: 670px) {
+            overflow-y: scroll;
         }
 
         .nav-item {
@@ -258,20 +262,22 @@
     }
 }
 
+.close {
+    display: flex;
+    justify-content: end;
+}
+
 .btn-close {
     display: none;
     background-image: url("../img/close.svg") !important;
     width: 32px;
     height: 32px;
+    padding: 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     opacity: 1;
-    padding: 0;
     border: none;
-    position: absolute;
-    top: 51%;
-    right: 24px;
     z-index: 5;
     opacity: 1;
 

@@ -1,6 +1,15 @@
+.navbar {
+    margin: 0;
+}
+
 .service {
     max-width: 1360px;
-    margin: 60px auto 0;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    @media (max-width: 576px) {
+        padding: 0 30px;
+    }
 
     &-container {
         display: flex;
@@ -114,7 +123,9 @@
 }
 
 .content {
-    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 .service-modal-window {
@@ -154,6 +165,7 @@
 
         .close-button {
             cursor: pointer;
+            height: 32px;
 
             &:hover {
                 background-color: #e6e6f0;
@@ -224,7 +236,6 @@
         }
     }
 }
-
 
 .service-open {
     overflow: hidden;
