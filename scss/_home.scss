@@ -22,16 +22,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 60px auto;
-    padding: 0 60px;
 
     @media (max-width: 991.98px) {
         flex-direction: column;
     }
 
-    @media (max-width: 768px) {
-        padding: 0 30px;
-    }
+    // .home-info .container {
+    //     padding: 0 60px !important;
+    // }
 
     .nav {
         @media (max-width: 991.98px) {
@@ -170,16 +168,12 @@
 
 .services-sect {
     padding-bottom: 30px;
-    .container {
-        padding: 0;
-        width: auto;
 
-        @media (max-width: 1024px) {
-            margin: 60px;
-        }
+    .sect-title {
+        padding: 0 0 60px;
 
-        @media (max-width: 768px) {
-            margin: 30px;
+        @media (max-width: 576px) {
+            padding: 0 0 30px;
         }
     }
 }
@@ -249,20 +243,6 @@
     }
 }
 
-.home-slider-sect {
-    .container {
-        padding: 60px;
-
-        @media (max-width: 991.98px) {
-            padding: 0;
-        }
-
-        @media (max-width: 700px) {
-            padding: 0 30px;
-        }
-    }
-}
-
 .carousel-inner {
     border-radius: 12px;
 }
@@ -318,10 +298,11 @@
         position: absolute;
         top: 50%;
         left: 50%;
+        width: 100%;
         transform: translate(-50%, -50%);
 
         @media (max-width: 768px) {
-            transform: translate(-50%, -50%) scale(1.25);
+            transform: translate(-50%, -50%) scale(1);
         }
 
         @media (max-width: 420px) {
@@ -351,6 +332,7 @@
 }
 
 .clients-sect {
+    margin-top: 60px;
     text-align: center;
 }
 
@@ -415,25 +397,10 @@
 
 .public-sect {
     background-color: $lightgrey-color;
-    .container {
-        padding: 30px 60px 0px;
 
-        @media (max-width: 991.98px) {
-            padding: 0;
-        }
-
-        @media (max-width: 700px) {
-            padding: 0 30px;
-        }
+    .sect-title {
+        margin-bottom: 30px;
     }
-
-    @media (min-width: 1920px) {
-        margin-top: 60px;
-    }
-}
-
-.sect-title {
-    padding: 30px 0;
 }
 
 .public-row {
