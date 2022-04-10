@@ -33,7 +33,9 @@
     margin-bottom: 60px;
 }
 
-.footer {
+.footer-services {
+    background: none !important;
+
     @media (min-width: 1920px) {
         margin-top: 60px !important;
     }
