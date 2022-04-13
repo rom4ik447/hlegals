@@ -71,3 +71,12 @@
 #scroll-home {
     scroll-behavior: smooth;
 }
+
+.space {
+    width: 100%;
+    height: 60px;
+
+    @media (max-width: 576px) {
+        display: none;
+    }
+}

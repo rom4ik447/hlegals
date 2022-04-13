@@ -1,8 +1,53 @@
 .public-sect-page {
     background-color: $lightgrey-color;
 
+    .container {
+        padding-top: 32px;
+    }
+
     .sect-title {
         margin-bottom: 30px;
+    }
+}
+
+.switch-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.publication-buttons {
+    display: flex;
+    padding: 2px;
+    width: 233px;
+    height: 42px;
+    background: #e6e6f0;
+    border-radius: 12px;
+    margin-bottom: 32px;
+    gap: 2px;
+
+    .button-news,
+    .button-articles {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #323264;
+        padding: 8px 30px 10px;
+        display: flex;
+        align-items: center;
+
+        &.active {
+            background: #ffffff;
+            border-radius: 10px;
+        }
+
+        &:hover:not(.active) {
+            cursor: pointer;
+            background: $lightgrey-color;
+            border-radius: 10px;
+        }
     }
 }
 

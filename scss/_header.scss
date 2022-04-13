@@ -148,6 +148,11 @@
             align-items: flex-start;
         }
 
+        @media (max-width: 768px) {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
         @media (max-width: 576px) {
             flex-direction: initial;
             padding-right: var(--bs-gutter-x, 0.75rem);
