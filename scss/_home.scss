@@ -406,7 +406,11 @@
 .public-row {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     @media (max-width: 574px) {
         display: flex;
@@ -432,7 +436,7 @@
     }
 
     &:nth-of-type(3) {
-        @media (max-width: 991.98px) {
+        @media (max-width: 1024px) {
             grid-column: -3/-1;
         }
     }
