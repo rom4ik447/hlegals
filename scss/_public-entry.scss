@@ -1,0 +1,50 @@
+.publication {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    @media (max-width: 576px) {
+        padding: 0 30px;
+    }
+
+    &-content {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #000000;
+    }
+
+    .public-img {
+        object-fit: cover;
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    .section-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: #323264;
+        margin-top: 30px;
+
+        @media (max-width: 576px) {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    .section-data {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $grey-color;
+        margin-top: 15px;
+        padding-bottom: 34px;
+        border-bottom: 4px solid #e6e6f0;
+    }
+}
