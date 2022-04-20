@@ -9,6 +9,11 @@
 }
 
 .team {
+    &-card {
+        &:nth-of-type(6) {
+            margin-bottom: 30px;
+        }
+    }
     &-row {
         display: grid;
         gap: 60px;
@@ -20,6 +25,7 @@
 
         @media (max-width: 576px) {
             grid-template-columns: 1fr;
+            gap: 30px;
         }
     }
 
@@ -28,6 +34,10 @@
         width: 100%;
         border-radius: 12px;
         object-fit: cover;
+
+        @media (max-width: 576px) {
+            height: 300px;
+        }
     }
 
     .name {
