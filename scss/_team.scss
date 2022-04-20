@@ -11,7 +11,9 @@
 .team {
     &-card {
         &:nth-of-type(6) {
-            margin-bottom: 30px;
+            @media (max-width: 576px) {
+                margin-bottom: 30px;
+            }
         }
     }
     &-row {
