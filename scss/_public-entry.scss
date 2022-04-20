@@ -110,3 +110,38 @@
         margin-top: 15px;
     }
 }
+
+.contact-link {
+    width: 100%;
+    height: 76px;
+    display: flex;
+    gap: 10px;
+    border-top: 4px solid #e6e6f0;
+    padding-top: 30px;
+    margin-top: 30px;
+
+    .contact {
+        width: 42px;
+        height: 42px;
+        padding: 9px;
+        border-radius: 12px;
+        background-color: $lightgrey-color;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #ededf7;
+        }
+
+        // &-fb,
+        // &-tg,
+        // &-in {
+        //     svg {
+        //         stroke: $lightgrey-color;
+
+        //         &:hover {
+        //             stroke: #ededf7;
+        //         }
+        //     }
+        // }
+    }
+}
